@@ -1,44 +1,47 @@
---Vector
+--Ejemplos de Vectores
 
-entity ejemplo21 is
+
+--Ejercicio01
+entity ejericio01 is
 port (A,B, : in bit_vector (3 downto 0);  
 C: inout bit_vector(3 downto 0); 
 S: out bit_vector (3 downto 0));
-end ejemplo21;
+end ejericicio01;
 
 
 
 
---Ejercicio de Vector
-entity ejemplos is
+--Ejercicio02
+entity ejericicio02 is
 port (Q: in bit_vector (3 downto 0); 
 F: out bit_vector (0 to 7));
-end ejemplos;
+end ejercicio02;
 
 
 
 
---Ejercicio de Vector
+--Ejercicio03
+--Se declara la libreria
 library ieee;
---use nombre_libreria.nombrepaquete.all;
+--Para usar paquetes >>use nombre_libreria.nombrepaquete.all;
 use ieee.std_logic_1164.all;
 
-entity flujo is
+entity ejercicio03 is
 port (X: in std_logic_vector(1 downto 0); 
 A,B: in std_logic; 
 Z: out std_logic_vector(0 to 3));
-end flujo;
+end ejericico03;
 
 
 
---ejemplo21
+--ejericio04
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity ejemplor is
+entity ejercicio04 is
 port (A,B: in std_logic; 
 F0, F1 : out std_logic);
-end ejemplor;
+end ejericio04;
 
 architecture fluj of ejemplor is
 begin
@@ -52,22 +55,22 @@ end fluj;
 
 
 
---- ejemplo2
+--- Ejerciio05 estilo funcional
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity funcional is
+entity efuncional is
 port (A,B: in std_logic; 
 c : out std_logic);
-end funcional;
+end efuncional;
 
-architecture proceso of funcional is
+architecture proceso of efuncional is
 begin
 process(A,B)
 begin
-	if A = B then
+  if A = B then
     c<='1';
-    else c<='0';
+  else c<='0';
     end if;
 end process;
 end proceso;
