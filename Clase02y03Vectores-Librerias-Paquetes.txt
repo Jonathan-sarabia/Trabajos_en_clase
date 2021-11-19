@@ -32,6 +32,17 @@ A,B: in std_logic;
 Z: out std_logic_vector(0 to 3));
 end ejericico03;
 
+Library ieee;
+use ieee.std_logic_1164.all;
+use work.std_arith.all;
+
+--Ejercico de un Sumador
+entity Sumador is
+port(
+ A, B: in std_logic_vector(0 to 1);
+    SUMA: out std_logic_vector(0 to 1);
+);
+end Sumador;
 
 
 --ejericio04
