@@ -1,0 +1,22 @@
+--Clase1 Programacion en  VHDL.
+-- Introduccion en VHDL
+
+
+entity Tabla is
+port( A, B, C: in bit;
+    F0, F1: out bit):
+end Tabla;
+
+
+-- DEMO 02
+enity Circuito is
+port (a,b,c,d,f,g,h, : in bit; F1: out bit);
+end Circuito;
+
+--Demo 04
+--Referente a la integración de módulos.
+entity Proyecto is
+port (A3, A2, A1, A0, B3, B2, B2, B0: in bit;
+C3, C2, C1, C0: inout bit;
+S3,S2,S1 ,S0: out bit);
+end Proyecto;
