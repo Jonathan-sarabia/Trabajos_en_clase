@@ -45,7 +45,7 @@ port(
 end Sumador;
 
 
---ejericio04
+--Ejericio04 > Ejemplo con el estilo de flujo de datos
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -59,10 +59,23 @@ begin
 	F0 <= '1' when (A='0' and B='0') else
     	  '1' when  (A='0' and B='1') else
           '0';
-    F1 <= '0' when (A='1' and B='1') else
+       F1 <= '0' when (A='1' and B='1') else
     		'1';
 end fluj;
 
+
+--Ejercicio06 Compuerta AND
+library IEEE;
+use IEEE.std_logic_1164.all;
+entity compuerta is
+port (A, B : in std_logic;
+F: out in std_logic );
+end compuerta;
+architecture AND of compuerta is
+begin 
+F <= '1' when (A = '1' and B = '1') 
+else'0'
+end AND;
 
 
 
@@ -85,4 +98,7 @@ begin
     end if;
 end process;
 end proceso;
+
+
+
 
