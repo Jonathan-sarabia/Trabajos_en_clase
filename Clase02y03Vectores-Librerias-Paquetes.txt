@@ -1,7 +1,7 @@
 --Ejemplos de Vectores
 
 
---Ejercicio01
+--Ejercicio04
 entity ejericio01 is
 port (A,B, : in bit_vector (3 downto 0);  
 C: inout bit_vector(3 downto 0); 
@@ -11,7 +11,7 @@ end ejericicio01;
 
 
 
---Ejercicio02
+--Ejercicio05
 entity ejericicio02 is
 port (Q: in bit_vector (3 downto 0); 
 F: out bit_vector (0 to 7));
@@ -20,7 +20,7 @@ end ejercicio02;
 
 
 
---Ejercicio03
+--Ejercicio06
 --Se declara la libreria
 library ieee;
 --Para usar paquetes >>use nombre_libreria.nombrepaquete.all;
@@ -32,11 +32,12 @@ A,B: in std_logic;
 Z: out std_logic_vector(0 to 3));
 end ejericico03;
 
+
+
+--Ejercico de un Sumador 07
 Library ieee;
 use ieee.std_logic_1164.all;
 use work.std_arith.all;
-
---Ejercico de un Sumador
 entity Sumador is
 port(
  A, B: in std_logic_vector(0 to 1);
@@ -45,7 +46,8 @@ port(
 end Sumador;
 
 
---Ejericio04 > Ejemplo con el estilo de flujo de datos
+
+--Ejericio08 > Ejemplo con el estilo de flujo de datos
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -64,7 +66,8 @@ begin
 end fluj;
 
 
---Ejercicio06 Compuerta AND
+
+--Ejercicio09 Compuerta AND
 library IEEE;
 use IEEE.std_logic_1164.all;
 entity compuerta is
@@ -79,7 +82,8 @@ end AND;
 
 
 
---- Ejerciio05 estilo funcional
+
+--- Ejerciio10 estilo funcional ejercici 10
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -99,7 +103,9 @@ begin
 end process;
 end proceso;
 
---compuerta or
+
+
+--compuerta or ejercicio 11
  library IEEE;
 use IEEE.std_logic_ll64.all;
 entity ejercicioor is
