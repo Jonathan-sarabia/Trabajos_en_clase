@@ -1,4 +1,4 @@
---Ejercicio de Estilo Estructural
+--Ejercicio de Estilo Estructural 15
 library ieee;
 use ieee.std_logic_1164.all;
 
