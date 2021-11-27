@@ -1,7 +1,7 @@
 --Ejemplos de Vectores
 
 
---Ejercicio04
+--Ejercicio05
 entity ejericio01 is
 port (A,B, : in bit_vector (3 downto 0);  
 C: inout bit_vector(3 downto 0); 
@@ -11,7 +11,7 @@ end ejericicio01;
 
 
 
---Ejercicio05
+--Ejercicio06
 entity ejericicio02 is
 port (Q: in bit_vector (3 downto 0); 
 F: out bit_vector (0 to 7));
@@ -20,7 +20,7 @@ end ejercicio02;
 
 
 
---Ejercicio06
+--Ejercicio07
 --Se declara la libreria
 library ieee;
 --Para usar paquetes >>use nombre_libreria.nombrepaquete.all;
@@ -34,7 +34,7 @@ end ejericico03;
 
 
 
---Ejercico de un Sumador 07
+--Ejercico de un Sumador 08
 Library ieee;
 use ieee.std_logic_1164.all;
 use work.std_arith.all;
@@ -47,7 +47,7 @@ end Sumador;
 
 
 
---Ejericio08 > Ejemplo con el estilo de flujo de datos
+--Ejericio09 > Ejemplo con el estilo de flujo de datos
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -67,7 +67,7 @@ end fluj;
 
 
 
---Ejercicio09 Compuerta AND
+--Ejercicio10 Compuerta AND
 library IEEE;
 use IEEE.std_logic_1164.all;
 entity compuerta is
@@ -83,7 +83,7 @@ end AND;
 
 
 
---- Ejerciio10 estilo funcional ejercici 10
+--- Ejerciio11 estilo funcional ejercici 10
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -105,7 +105,32 @@ end proceso;
 
 
 
---compuerta or ejercicio 11
+--Ejercicio de estilo Estructural14
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity composicion is
+port (A,B,C: in std_logic; F : out std_logic);
+end composicion;
+
+use work.gates.all;
+
+architecture estructural of composicion is
+signal x: bit_vector(0 to 2);
+begin
+U0: and2 port map (B,C, x(0));
+
+U1: and2 port map (C,A, x(1));
+
+U2: and2 port map (A,B, x(2));
+
+U3: or3 port map (x(0), x(1), x(2),F);
+end estructural;
+
+
+
+
+--compuerta or ejercicio 13
  library IEEE;
 use IEEE.std_logic_ll64.all;
 entity ejercicioor is
