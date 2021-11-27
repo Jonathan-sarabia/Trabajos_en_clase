@@ -81,7 +81,7 @@ END ejemplo;
 
 
 
---segmento de 23
+--segmento ejericio23
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY segmento IS
