@@ -1,5 +1,5 @@
 
---Lección clase 12
+--Lección clase 14
 library ieee;
 use ieee.std_Logic_1164.all;
 
@@ -16,7 +16,7 @@ end prueba
 
 
 
--- Ejercicio13
+-- Ejercicio15
 library IEEE;
 use IEEE.std_logic_1164.all;
 ---------------
@@ -27,7 +27,27 @@ use work.gates.all;
 architecture estructural of circuitoe1 is
 signal x: bit_vector(0 to 1);
 begin
-U0:  xnor2 port map (a(0),b(0), x(0));
+U0:  xnor2 port map (a(0),b(0), x(0));--Ejercicio de estilo Estructural
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity composicion is
+port (A,B,C: in std_logic; F : out std_logic);
+end composicion;
+
+use work.gates.all;
+
+architecture estructural of composicion is
+signal x: bit_vector(0 to 2);
+begin
+U0: and2 port map (B,C, x(0));
+
+U1: and2 port map (C,A, x(1));
+
+U2: and2 port map (A,B, x(2));
+
+U3: or3 port map (x(0), x(1), x(2),F);
+end estructural;
 U1:  xnor2 port map (a(1),b(1), x(1));
 U2:  and2 port map (x(0),x(1), c);
 end estructural;
@@ -35,7 +55,7 @@ end estructural;
 
 
 
---Ejercicio14 de estilo Estructural
+--Ejercicio16 de estilo Estructural
 library ieee;
 use ieee.std_logic_1164.all;
 
