@@ -1,4 +1,4 @@
---ejemplo tabla 
+--ejemplo tabla  16
 --X = ABC + ÁBC + ÀBC + ABC 
 --Y = ÁBC + ABC + ABC 
 --Z = ÁBC + ABC + ÁBC
@@ -23,7 +23,7 @@ end ejemplo;
 
 
 
--- Sumador 
+-- Sumador   17
 library IEEE;
 use IEEE.std_logic_1164.all;
 entity sumador is port(A, B: in std_logic_vector (0 to 3);
@@ -45,7 +45,7 @@ end sumar;
 
 
 
---concurrente condicional: when else
+--concurrente condicional: when else 18
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY condicional IS
@@ -64,7 +64,7 @@ END condicionales;
 
 
 
---mux
+--mux ejericicio 19
 ENTITY mux_1 IS
 PORT (E0,E1,E2,E3 IN STD_LOGIC; 
 SELA, SELB, SELC: IN STD_LOGIC; 
@@ -81,7 +81,7 @@ END ejemplo;
 
 
 
---segmento de 7
+--segmento de 20
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY segmento IS
