@@ -83,7 +83,7 @@ end AND;
 
 
 
---- Ejerciio11 estilo funcional ejercici 10
+--- Ejerciio11 estilo funcional ejercicio11
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -105,7 +105,7 @@ end proceso;
 
 
 
---Ejercicio de estilo Estructural14
+--Ejercicio de estilo Estructural2
 library ieee;
 use ieee.std_logic_1164.all;
 
