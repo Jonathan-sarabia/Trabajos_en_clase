@@ -8,9 +8,7 @@ entity tabajo12 is
     Port ( a,b,c : in  STD_LOGIC;
            x,y,z : out  STD_LOGIC);
 end tabajo12;
-
 architecture ejemplo of tabajo12 is
-
 begin
 X <= (not A and not B and not C) or (not A and not B and C) 
 or (not a and B and C ) or (A and B and C) ; 
