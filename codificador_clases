@@ -53,7 +53,6 @@ begin
  process(x)
  begin 
   d0 <= '1';d1 <= '1';d2 <= '1';d3 <= '1';d4 <= '1';d5 <= '1';d6 <= '1';d7 <= '1';d8 <= '1';d9 <= '1';
-  
   if(x = "0000") then
    d0 <= '0';
   elsif(x = "0001") then
@@ -129,25 +128,15 @@ architecture cod of codificador is
 begin
 process (a)
 begin
-
  If a = 0 then d <= "0000";
-
  elsif a = 1 then d <= "0001";
-
  elsif a = 2 then d <= "0010";
-
  elsif a = 3 then d <= "0011";
-
  elsif a = 4 then d <= "0100";
-
  elsif a = 5 then d <= "0101";
-
  elsif a = 6 then d <= "0110";
-
  elsif a = 7 then d <= "0111";
-
  elsif a = 8 then d <= "1000";
-
  else d <= "1001";
  end if;
 end process;
